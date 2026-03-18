@@ -1,23 +1,22 @@
-package org.example.hellomongodbspringboot2026.services;
+package org.example.epe1803.services;
 
-import org.example.hellomongodbspringboot2026.repositories.NbaRepository;
 import org.springframework.ai.chat.prompt.Prompt;
 import org.springframework.ai.ollama.OllamaChatModel;
 import org.springframework.ai.ollama.api.OllamaChatOptions;
 import org.springframework.stereotype.Service;
 
 @Service
-class LLMService {
+public class LLMService {
     private final OllamaChatModel chatModel;
 
     public LLMService(OllamaChatModel chatModel) {
         this.chatModel = chatModel;
     }
 
-    public String generateHistory(String seed){
+    public String generateRecomendacion(String seed){
         var response = chatModel.call(
                 new Prompt(
-                        "Dime la historia el equipo "+seed+" de la NBA. Menos de 60 palabras.",
+                        "Dame un mensaje de recomendacion generico para un producto de una tienda con un id entre el 1 y el 25",
                         OllamaChatOptions.builder()
                                 .model("llama3")
                                 .temperature(1.0)

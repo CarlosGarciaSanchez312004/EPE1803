@@ -1,15 +1,14 @@
-package org.example.ejerciciomongospringboot.entities;
+package org.example.epe1803.entities;
 
 import lombok.Data;
+import org.springframework.data.mongodb.core.mapping.Document;
 import lombok.NoArgsConstructor;
 import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
 @Data
-@NoArgsConstructor
-@Document(collection = "items")
+@Document(collection = "tienda")
 public class Item {
     @Id
     private ObjectId _id;

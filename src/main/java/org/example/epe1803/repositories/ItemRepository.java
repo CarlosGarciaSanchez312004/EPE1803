@@ -1,7 +1,6 @@
-package org.example.ejerciciomongospringboot.repositories;
-
+package org.example.epe1803.repositories;
 import org.bson.types.ObjectId;
-import org.example.ejerciciomongospringboot.entities.Item;
+import org.example.epe1803.entities.Item;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 

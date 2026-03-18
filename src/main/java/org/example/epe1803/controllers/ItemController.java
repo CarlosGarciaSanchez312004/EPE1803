@@ -1,7 +1,8 @@
-package org.example.ejerciciomongospringboot.controllers;
+package org.example.epe1803.controllers;
 
-import org.example.ejerciciomongospringboot.entities.Item;
-import org.example.ejerciciomongospringboot.services.ItemService;
+
+import org.example.epe1803.entities.Item;
+import org.example.epe1803.services.ItemService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

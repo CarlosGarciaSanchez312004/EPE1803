@@ -1,10 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title th:text="${item.title}">Item Details</title>
 </head>
 <body>
-$END$
+<h1 th:text="${item.title}">Title</h1>
+<img th:src="${item.image}" alt="Item Image" width="300"/>
+<p><strong>Price:</strong> $<span th:text="${item.price}">Price</span></p>
+<p><strong>Category:</strong> <span th:text="${item.category}">Category</span></p>
+<p><strong>Description:</strong> <span th:text="${item.description}">Description</span></p>
+<p><strong>Rate:</strong> <span th:text="${item.rate}">Rate</span></p>
+<p><strong>Count:</strong> <span th:text="${item.count}">Count</span></p>
+<p><strong>Color:</strong> <span th:text="${item.color}">Color</span></p>
+<p><strong>Manufacturer:</strong> <span th:text="${item.manufacturer}">Manufacturer</span></p>
+<p><strong>EAN:</strong> <span th:text="${item.EAN}">EAN</span></p>
+
+<hr>
+<h3>🤖 Recomendación de nuestro Asistente (IA):</h3>
+<p style="font-style: italic; color: #555;" th:text="${recomendacion}">Cargando recomendación...</p>
+<hr>
+
+<a href="/">Back to Items</a>
 </body>
 </html>

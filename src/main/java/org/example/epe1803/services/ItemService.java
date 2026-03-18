@@ -1,7 +1,6 @@
-package org.example.ejerciciomongospringboot.services;
-
-import org.example.ejerciciomongospringboot.entities.Item;
-import org.example.ejerciciomongospringboot.repositories.ItemRepository;
+package org.example.epe1803.services;
+import org.example.epe1803.entities.Item;
+import org.example.epe1803.repositories.ItemRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
